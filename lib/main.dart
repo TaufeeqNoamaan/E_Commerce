@@ -1,4 +1,7 @@
+import 'package:app/constants/colors.dart';
 import 'package:app/pages/home_page.dart';
+import 'package:app/pages/registration.dart';
+import 'package:app/pages/sign_in.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -15,9 +18,14 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       theme: ThemeData(
         
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.blue
       ),
-      home: HomePage()
+      home: const HomePage(),
+      routes: {
+        '/register' :(context) => const RegistrationPage(),
+        'sign-in':(context) => const SignInPage(),
+        'Home':(context) => const HomePage(),
+      },
     );
   }
 }
