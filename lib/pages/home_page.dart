@@ -9,6 +9,7 @@ class HomePage extends StatefulWidget {
 }
   
 class _HomePageState extends State<HomePage> {
+  // ** Declare all the variables and methods to use in the state of the app
   int _selectedIndex = 0;
   void onTap (int index) {
     setState(() {
@@ -19,6 +20,8 @@ class _HomePageState extends State<HomePage> {
   }
   @override
   Widget build(BuildContext context) {
+    // *  Declare all the variables and methods here to be used in the Build
+    // The list cannot be accessed outside the build method
    const List<Widget> _widgets = <Widget>[
       Text('PAGE 1'),
             Text('PAGE 2'),

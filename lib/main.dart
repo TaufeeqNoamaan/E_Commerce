@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
         
         primarySwatch: Colors.blue
       ),
-      home: const HomePage(),
+      home: const RegistrationPage(),
       routes: {
         '/register' :(context) => const RegistrationPage(),
         'sign-in':(context) => const SignInPage(),
